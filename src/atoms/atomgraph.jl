@@ -73,7 +73,7 @@ end
 # one without features or featurization initialized yet
 function AtomGraph(
     graph::SimpleWeightedGraph{A,B},
-    elements::Vector{String},    id = "") where {B <: Real,A <: Integer}
+    elements::Vector{String},    id = "") where {B <: Real,A <: Integer} 
     # check that elements is the right length
     num_atoms = size(graph)[1]
     @assert length(elements) == num_atoms "Element list length doesn't match graph size!"
