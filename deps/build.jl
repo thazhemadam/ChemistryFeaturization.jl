@@ -6,3 +6,4 @@ Conda.add("pymatgen", channel = "conda-forge")
 try
   Conda.rm("mkl")
   Conda.add("mkl")
+end
