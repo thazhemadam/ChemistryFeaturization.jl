@@ -37,6 +37,8 @@ jobs:
             ${{ matrix.os }}-
       - name: Run Pkg.build
         uses: julia-actions/julia-buildpkg@v1.2.0
+      - name: Show logs
+        run: cat ~/work/ChemistryFeaturization.jl/ChemistryFeaturization.jl/deps/build.log
       - name: Run Tests
         uses: julia-actions/julia-runtest@v1.6.0
 
